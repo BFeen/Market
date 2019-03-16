@@ -1,0 +1,19 @@
+.pages {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.pages__item {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    margin: 5px;
+}
+.pages__item_active {
+    background-color: white;
+    color: black;
+}

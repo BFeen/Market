@@ -1,0 +1,16 @@
+@import 'style.css';
+@import 'blocks/header/basket.css';
+@import 'blocks/header/header.css';
+@import 'blocks/header/login.css';
+@import 'blocks/header/logo.css';
+@import 'blocks/header/navigation.css';
+@import 'blocks/common/wrapper.css';
+@import 'blocks/common/inside-text.css';
+@import 'blocks/common/path.css';
+@import 'blocks/common/icon.css';
+@import 'blocks/main/main.css';
+@import 'blocks/main/filter.css';
+@import 'blocks/main/section.css';
+@import 'blocks/main/card.css';
+@import 'blocks/main/pages.css';
+@import 'blocks/footer/footer.css';

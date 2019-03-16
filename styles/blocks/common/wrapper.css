@@ -1,0 +1,9 @@
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto; 
+    font-family: Arial, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+}

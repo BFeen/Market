@@ -1,0 +1,16 @@
+.icon {
+    padding: 13px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.tw {
+    background-image: url(/images/icons/twitter.svg);
+}
+.fb {
+    background-image: url(/images/icons/facebook.svg);
+}
+.inst {
+    background-image: url(/images/icons/instagram.svg);
+}
