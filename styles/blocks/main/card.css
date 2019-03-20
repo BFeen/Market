@@ -1,11 +1,5 @@
+
 .card {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.card__item {
-    /* box-sizing: border-box; */
     width: 21%;
     padding: 10px;
     display: flex;
@@ -13,7 +7,7 @@
     align-items: center;
     margin: 10px;
 }
-.card__item:hover {
+.card:hover {
     border: 1px solid black;
     margin: 9px;
 }

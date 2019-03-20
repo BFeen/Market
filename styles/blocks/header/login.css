@@ -9,3 +9,7 @@
     background: url(/images/icons/account.png) center  center / contain no-repeat;
     margin-right: 10px;
 }
+
+.login_margin-right {
+    margin-right: 50px;
+}

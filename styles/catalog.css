@@ -7,10 +7,17 @@
 @import 'blocks/common/wrapper.css';
 @import 'blocks/common/inside-text.css';
 @import 'blocks/common/path.css';
-@import 'blocks/common/icon.css';
+@import 'blocks/common/social.css';
 @import 'blocks/main/main.css';
 @import 'blocks/main/filter.css';
 @import 'blocks/main/section.css';
 @import 'blocks/main/card.css';
 @import 'blocks/main/pages.css';
 @import 'blocks/footer/footer.css';
+
+.catalog {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

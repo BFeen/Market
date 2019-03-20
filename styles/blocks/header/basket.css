@@ -9,3 +9,6 @@
     background: url(/images/icons/basket.png) center  center / contain no-repeat;
     margin-right: 10px;
 }
+.basket_margin-right {
+    margin-right: 50px;
+}

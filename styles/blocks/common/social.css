@@ -1,8 +1,16 @@
-.icon {
+.social {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social__icon {
     padding: 13px;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.social__icon_margin-right {
     margin-right: 10px;
 }
 .tw {
