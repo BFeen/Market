@@ -14,7 +14,7 @@
 .card__pic {
     border: 1px solid lightgray;
     background-color: #eee;
-    width: 220px;
+    min-width: 100px;
     height: 250px;
     margin-bottom: 20px;
 }

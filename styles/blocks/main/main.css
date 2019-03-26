@@ -1,10 +1,19 @@
 .main {
     text-align: center;
 }
+.main__item {
+    padding: 10vh 0;
+}
 .main__title {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 36px;
+}
+.main__title_text-large {
+    font-size: 50px;
+}
+.main__title_margin {
+    margin-bottom: 20px;
 }
 .main__text {
     font-style: italic;

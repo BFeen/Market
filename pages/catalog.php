@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/styles/catalog.css">
+    <link rel="stylesheet" href="/styles/dest/catalog.css">
     <title>Каталог магазина</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__item">
-                <div class="logo"></div>
+                <div class="logo logo_margin-right"></div>
                 <nav class="navigation">
                     <a href="#" class="navigation__link">Женщинам</a>
                     <a href="#" class="navigation__link">Мужчинам</a>

@@ -3,3 +3,6 @@
     height: 50px;
     background: url(/images/icons/logo.jpg) center center / contain no-repeat;
 }
+.logo_margin-right {
+    margin-right: 20px;
+}

@@ -1,0 +1,42 @@
+.offer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.offer__item {
+    min-width: 50%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.offer__pic {
+    color: white;
+    width: 50%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.offer__title {
+    font-size: 24px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.offer__text {
+    font-style: italic;
+}
+.offer__pic_height {
+    height: 700px;
+}
+.jeans {
+    background-image: url(/images/1.jpg);
+}
+.belt {
+    background-image: url(/images/5.jpg);
+}
