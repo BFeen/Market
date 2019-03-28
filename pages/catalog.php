@@ -74,56 +74,6 @@
                         <div class="card__title">Наименование товара</div>
                         <div class="card__cost">1000 руб.</div>
                     </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__pic"></div>
-                        <div class="card__title">Наименование товара</div>
-                        <div class="card__cost">1000 руб.</div>
-                    </div>
                 </div>
             </section>
             <div class="pages">

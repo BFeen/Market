@@ -21,6 +21,9 @@
     min-width: 90%;
     height: 200px;
     margin-bottom: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .card__title {
     font-weight: bold;
