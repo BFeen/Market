@@ -1,0 +1,17 @@
+@import url(blocks/common/body.css);
+@import url(blocks/common/wrapper.css);
+@import url(blocks/common/inside-text.css);
+@import url(blocks/common/path.css);
+@import url(blocks/common/social.css);
+@import url(blocks/common/size.css);
+@import url(blocks/header/basket.css);
+@import url(blocks/header/header.css);
+@import url(blocks/header/login.css);
+@import url(blocks/header/logo.css);
+@import url(blocks/header/navigation.css);
+@import url(blocks/main/main.css);
+@import url(blocks/main/section.css);
+@import url(blocks/footer/footer.css);
+
+@import url(blocks/main/product.css);
+/* @import */

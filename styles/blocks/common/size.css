@@ -1,0 +1,11 @@
+.size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.size__item {
+    border: 1px solid gray;
+    padding: 7px;
+    margin: 7px;
+}

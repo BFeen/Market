@@ -31,12 +31,27 @@ function generateMain() {
                 }))
                 .pipe(gulp.dest('styles/dest/'));
 }
+function generateDetails() {
+    return gulp .src(`styles/details.css`)
+                .pipe(importCSS())
+                .pipe(autoprefixer({
+                    browsers: ['< 0.1%'],
+                    cascade: false
+                }))
+                .pipe(cleanCSS({
+                    compatibility: 'ie8', 
+                    level : 2
+                }))
+                .pipe(gulp.dest('styles/dest/'));
+}
 
 function watchCssFiles() {
     watch('styles/blocks/**/*.css', generateCatalog);
     watch('styles/catalog.css', generateCatalog);
     watch('styles/blocks/**/*.css', generateMain);
     watch('styles/main.css', generateMain);
+    watch('styles/blocks/**/*.css', generateDetails)
+    watch('styles/details.css', generateDetails);
     // gulp.watch('styles/blocks/**/*.css', gulp.series('style'));
 }
 

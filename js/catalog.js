@@ -1,25 +1,30 @@
 class Product {
-    constructor(name, price, pic = null, id) {
+    constructor(name, price, id, pic = null, sale = 0) {
         this.name = name;
         this.price = price;
-        this.pic = pic;
         this.id = id;
+        this.pic = pic;
+        this.sale = sale;
     }
     renderProduct(el) {
         let newProductBlock = document.createElement('a');
         newProductBlock.classList.add('card');
-        newProductBlock.href = `/handlers/getCatalogItems.php?productId=${this.id}`; // Примерный адрес будущего обработчика + id
+        newProductBlock.href = `/pages/details.php?productId=${this.id}`; // Примерный адрес будущего обработчика + id
+        if (this.sale > 0) {
+            newProductBlock.classList.add('sale');
+        }
         newProductBlock.innerHTML = `
-            <div class="card__pic" style="background-image: url(/images/catalog/${this.pic})"></div>
+            <div class="card__pic" style="background-image: url(${this.pic})"></div>
             <div class="card__title">${this.name}</div>
-            <div class="card__cost">${this.price} руб.</div>`;
+            <div class="card__cost">${this.price - this.price*this.sale} руб.</div>`;
         el.appendChild(newProductBlock);
     }
 }
 
 class Catalog {
-    constructor( catalogBlock ) {
-        this.el = document.querySelector(catalogBlock);
+    constructor( section ) {
+        this.section = section;
+        this.el = document.querySelector('.catalog');
         this.products = [];
     }
     productsArray( products ) {
@@ -30,11 +35,35 @@ class Catalog {
             value.renderProduct(this.el);
         });
     }
+    clear() {
+        this.products = [];
+        this.el.innerHTML = '';
+    }
+    preloaderOn() {
+
+    }
+    preloaderOff() {
+
+    }
+    load() { // AJAX
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', `/api/catalog_handler.php?section=${this.section}`);
+        xhr.send();
+
+        xhr.addEventListener('load', () => {
+            let data = JSON.parse(xhr.responseText);
+            this.clear();
+            data.forEach(value => {
+                if (value.sale != 0) {
+
+                }
+                let newProduct = new Product(value.name, value.price, value.id, value.photo, value.sale);
+                this.products.push(newProduct);
+            });
+        this.renderCatalog();
+        });
+    }
 }
 
-let catalog = new Catalog('.catalog'); // Создание элемента класса Каталог
-catalog.productsArray([ // Начиняем каталог товарами
-    new Product('snickers', '3500', '1.jpg', '1'),
-    new Product('jaket', '15500', '2.jpg', '2')
-]);
-catalog.renderCatalog(); // Вывод каталога на страницу
+let catalog = new Catalog('man'); // Создание элемента класса Каталог
+catalog.load();
